@@ -9,6 +9,7 @@ gem 'rails', '~> 5.2.4', '>= 5.2.4.4'
 gem 'sqlite3'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+gem 'bootstrap-sass', '3.4.1'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -48,6 +49,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'rails-controller-testing', '1.0.4'
 end
 
 group :test do
@@ -56,6 +58,9 @@ group :test do
   gem 'selenium-webdriver'
   # Easy installation and use of chromedriver to run system tests with Chrome
   gem 'chromedriver-helper'
+  gem 'minitest',                 '5.10.3'
+  gem 'minitest-reporters',       '1.1.14'
+  gem 'rails-controller-testing', '1.0.4'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
